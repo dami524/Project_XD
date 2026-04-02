@@ -6,11 +6,12 @@ import secrets
 import json
 import time
 from urllib.parse import urlparse, parse_qs
+import os
 
 app = Flask(__name__)
 
-HOST = "127.0.0.1"
-PORT = 5000
+HOST = "0.0.0.0"
+PORT = int(os.environ.get("PORT", 5000))
 SECRET_KEY = "a9Gk3Pq7L1rT5zX"  # your 15-char secret
 
 def valid_auth(headers):
