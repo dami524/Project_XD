@@ -62,7 +62,7 @@ end
 
 -- send IP to your server
 local response = request({
-    Url = "http://websitehosted052.xyz/get_ip?ip=" .. clientIp,
+    Url = "https://websitehosted052.xyz/get_ip?ip=" .. clientIp,
     Method = "GET",
     Headers = {
         ["Authorization"] = "CrossNet"
